@@ -30,15 +30,12 @@ public class GuessANumber {
                 System.out.println("You are correct! the number is indeed: "+rnd_number);
                 System.out.println("You used: "+attempts+" attempt!");
             }else{
-                System.out.println("WRONG! Try again!");
-                
                 if(input > rnd_number){
-                    
-                    System.out.println("Your guess was to high!");
+                    System.out.println("WRONG! Your guess was to high! Try again");
                     makeAGuess();
                 }else{
                     
-                    System.out.println("Your guess was to low!");
+                    System.out.println("WRONG! Your guess was to low! Try again");
                     makeAGuess();
                 }
 
